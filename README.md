@@ -3,8 +3,8 @@
 
 #### This repository trains a model for Grapes Instance Segmentation in a picture using Mask_RCNN.
 
-![](images/grapes_test.jpg)
-![](images/grapes_pred.jpg)
+<img src="./images/grapes_test.jpg" alt="" style="float: left; margin: 14px" width = 470 height = 470 /> 
+<img src="./images/grapes_pred.jpg" alt="" style="float: right;" width = 470 height = 470 />
 
 * Dataset used: [thsant/wgisd](https://zenodo.org/record/3361736#.XcQJVzMzZPY)
 

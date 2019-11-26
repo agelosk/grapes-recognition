@@ -10,7 +10,7 @@
 
 * Git for augmenting the data: [UjjwalSaxena/Automold--Road-Augmentation-Library](https://github.com/UjjwalSaxena/Automold--Road-Augmentation-Library)
 
-After downloading the WGISD dataset, copy the data folder into the repo/dataset folder.
+After downloading the WGISD dataset, copy the **data** folder into the **repo/dataset** folder.
 
 ```python
 #To install prerequisites libraries run:

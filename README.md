@@ -2,7 +2,7 @@
 
 #### This repository trains a model for Grapes Instance Segmentation in a picture using Mask_RCNN.
 
-<img src="./images/test_pred.bmp" alt="" style="float: left; margin: 14px"/> 
+<img src="./images/grapes_test.jpg" alt="" style="float: left; margin: 14px" width = 430 height = 430 /> <img src="./images/grapes_pred.jpg" alt="" style="float: right;" width = 430 height = 430 />
 
 * Dataset used: [thsant/wgisd](https://zenodo.org/record/3361736#.XcQJVzMzZPY)
 
@@ -15,7 +15,12 @@ After downloading the WGISD dataset, copy the data folder into the repo/dataset 
 ```python
 #To install prerequisites libraries run:
 pip install -r requirements.txt
+```
+Grapes recognition, is still an open problem due to the difficulty emerging from varying weather conditions. To eliminate this impediment we choose to augment the dataset:
 
+1. Varying contrast and brightness
+2. 
+```
 #To augment the dataset and split it into training and validation set run:
 python code/augment_split.py
 

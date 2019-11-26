@@ -49,11 +49,11 @@ python /code/visualize_cv2.py video_path
 python /code/visualize_cv2.py 0
 ```
 
+Currently the mask_rcnn model with the use of a Google Colab GPU predicts approximately 3 frames per second. Hence for a common video of 24 FPS, our model takes almost 8sec for each second of the video. 
+
 #### Errors
 
 In case of a **StopIteration error** (or other errors from Keras/Tensorflow) while training the model, it is suggested to install **Keras==2.2.5** and **Tensorflow==1.15.0** according to [this](https://github.com/matterport/Mask_RCNN/issues/1825#issuecomment-549767122) git issue.
 
-
-#### Coming soon: 
-
-* Code for live recognition / video recognition
+#### Coming Soon
+** Yolo-v3 implementation to achieve greater real-time prediction speed

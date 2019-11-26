@@ -10,6 +10,8 @@
 
 * Git for augmenting the data: [UjjwalSaxena/Automold--Road-Augmentation-Library](https://github.com/UjjwalSaxena/Automold--Road-Augmentation-Library)
 
+#### Installation
+
 After downloading the WGISD dataset, copy the **data** folder into the **repo/dataset** folder.
 
 ```python
@@ -37,7 +39,7 @@ python code/augment_split.py
 python code/train_grapes.py
 ```
 
-To test your model use the **test_grapes.ipynb**. If you don't want to train your own model, use the pre-trained **mask_rcnn_grapes.h5** in the releases of the repository. Use the validation folder to evaluate the model (mAP). Use the test folder to test your own images. 
+To test your model use the **test_grapes.ipynb**. If you don't want to train your own model, use the pre-trained **mask_rcnn_grapes.h5** in the releases of the repository. Use the **validation folder** to evaluate the model (mAP). Use the **test folder** to test your own images. 
 
 #### Errors
 

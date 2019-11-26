@@ -18,8 +18,14 @@ pip install -r requirements.txt
 ```
 Grapes recognition, is still an open problem due to the difficulty emerging from varying weather conditions. To eliminate this impediment we choose to augment the dataset:
 
-1. Varying contrast and brightness
-2. 
+1. Varying levels of contrast
+<img src="./images/contrast.bmp" alt="">
+
+2. Varying levels of brightness
+<img src="./images/brightness.bmp" alt="">
+
+3. Addition of snow and fog
+<img src="./images/rain-fog.bmp" alt="">
 ```
 #To augment the dataset and split it into training and validation set run:
 python code/augment_split.py

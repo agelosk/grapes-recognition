@@ -41,6 +41,14 @@ python code/train_grapes.py
 
 To test your model use the **test_grapes.ipynb**. If you don't want to train your own model, use the pre-trained **mask_rcnn_grapes.h5** in the releases of the repository. Use the **validation folder** to evaluate the model (mAP). Use the **test folder** to test your own images. 
 
+```python
+#To predict a downloaded video run:
+python /code/visualize_cv2.py video_path
+
+#To predict from your webcam run:
+python /code/visualize_cv2.py 0
+```
+
 #### Errors
 
 In case of a **StopIteration error** (or other errors from Keras/Tensorflow) while training the model, it is suggested to install **Keras==2.2.5** and **Tensorflow==1.15.0** according to [this](https://github.com/matterport/Mask_RCNN/issues/1825#issuecomment-549767122) git issue.
@@ -49,4 +57,3 @@ In case of a **StopIteration error** (or other errors from Keras/Tensorflow) whi
 #### Coming soon: 
 
 * Code for live recognition / video recognition
-

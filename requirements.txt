@@ -9,18 +9,4 @@ tensorflow>=1.3.0
 keras>=2.0.8
 opencv-python
 h5py
-imgaug
-=======
-numpy
-scipy
-Pillow
-cython
-matplotlib
-scikit-image
-tensorflow>=1.3.0
-keras>=2.0.8
-opencv-python
-h5py
-imgaug
->>>>>>> d1e2adbf82b12ab79687dfa850e9c8e1d7654149
 IPython[all]

@@ -24,12 +24,14 @@ Grapes recognition, is still an open problem due to the difficulty emerging from
 2. Varying levels of brightness
 <img src="./images/brightness.bmp" alt="">
 
-3. Addition of snow and fog
+3. Addition of rain and fog
 <img src="./images/rain-fog.bmp" alt="">
+
 ```
 #To augment the dataset and split it into training and validation set run:
 python code/augment_split.py
-
+```
+```
 #To train your own model with the augmented dataset run:
 python code/train_grapes.py
 ```

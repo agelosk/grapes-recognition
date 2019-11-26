@@ -37,7 +37,7 @@ python code/augment_split.py
 python code/train_grapes.py
 ```
 
-In case of a **StopIteration error** while training the model, it is suggested to install **Keras==2.2.5** and **Tensorflow==1.15.0** according to [this](https://github.com/matterport/Mask_RCNN/issues/1825) git issue.
+In case of a **StopIteration error** while training the model, it is suggested to install **Keras==2.2.5** and **Tensorflow==1.15.0** according to [this](https://github.com/matterport/Mask_RCNN/issues/1825#issuecomment-549767122) git issue.
 
 Jupyter notebook **test_grapes.ipynb**  has been created to visualize the results of the **mask_rcnn_grapes.h5**
 

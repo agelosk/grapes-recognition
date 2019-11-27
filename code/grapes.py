@@ -128,8 +128,6 @@ class GrapeDataset(utils.Dataset):
             # Unfortunately, VIA doesn't include it in JSON, so we must read
             # the image. This is only managable since the dataset is tiny.
 
-        i = 0
-        printProgressBar(0, len(os.listdir(dataset_dir))//2, prefix = 'Progress:', suffix = 'Complete', length = 50)
         for f in os.listdir(dataset_dir):
             if '.jpg' in f:
                 #image_path = os.path.join(dataset_dir, a['filename'])
@@ -148,11 +146,9 @@ class GrapeDataset(utils.Dataset):
                 image_id=name,  # use file name as a unique image id
                 path=dataset_dir+'/'+name,
                 width=width, height=height,
-                polygons=dataset_dir+'/'+name[:-4]+'.npz')
-
-
-            printProgressBar(i+1, len(os.listdir(dataset_dir))//2, prefix = 'Progress:', suffix = 'Complete', length = 50)
-            i = i + 1
+                polygons=dataset_dir+'/'+name[:-4]+'.npz',
+                set=subset
+            )
 
     def load_mask(self, image_id):
         """Generate instance masks for an image.
@@ -172,9 +168,13 @@ class GrapeDataset(utils.Dataset):
         #mask = np.zeros([info["height"], info["width"], len(info["polygons"])],
         #                dtype=np.uint8)
         mask_dir = (info["polygons"])
+        set = (info["set"])
 
-        zip = load(mask_dir)
-        for i in zip.files: mask = zip[i]
+        if (set is not "test"):
+            zip = load(mask_dir)
+            for i in zip.files: mask = zip[i]
+        else:
+            mask = np.zeros((1,info["height"],info["width"]))
             # Get indexes of pixels inside the polygon and set them to 1
             #rr, cc = skimage.draw.polygon(p['all_points_y'], p['all_points_x'])
             #mask[rr, cc, i] = 1

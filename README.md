@@ -59,4 +59,5 @@ Currently the mask_rcnn model with the use of a Google Colab GPU predicts approx
 In case of a **StopIteration error** (or other errors from Keras/Tensorflow) while training the model, it is suggested to install **Keras==2.2.5** and **Tensorflow==1.15.0** according to [this](https://github.com/matterport/Mask_RCNN/issues/1825#issuecomment-549767122) git issue.
 
 #### Coming Soon
+* More accurate model for grapes recognition
 * Yolo-v3 implementation to achieve greater real-time prediction speed
